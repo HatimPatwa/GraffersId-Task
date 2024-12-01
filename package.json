@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+        "dev:client": "cd client && vite",
+        "dev:server": "cd backend && npx tsx watch server.ts ",
+        "build": "cd client && vite build",
+        "start": "cd backend/dist && node server.js"
+    },
+    "dependencies": {
+        "concurrently": "^7.0.0"
+    }
+}
