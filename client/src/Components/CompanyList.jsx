@@ -53,7 +53,7 @@ const CompanyList = ({ searchString }) => {
     return (
         <div className="p-6 ">
             {displayCompanies.map((company, index) => (
-                <CompanyCard key={index} {...company} />
+                <CompanyCard key={index} {...company} reviews={company?.reviewCount} rating={company?.averageRating} />
             ))}
         </div>
     );

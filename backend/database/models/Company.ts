@@ -10,13 +10,13 @@ const companySchema = new mongoose.Schema({
 
 //remove __v from the response
 
-companySchema.set('toJSON', {
-  transform: (document, returnedObject) => {
-    returnedObject.id = returnedObject._id;
-    delete returnedObject._id;
-    delete returnedObject.__v;
-  },
-});
+// companySchema.set('toJSON', {
+//   transform: (document, returnedObject) => {
+//     returnedObject.id = returnedObject._id;
+//     delete returnedObject._id;
+//     delete returnedObject.__v;
+//   },
+// });
 
 const Company = mongoose.model('Company', companySchema);
 

@@ -23,7 +23,7 @@ const CitySelector = ({handleSearch}) => {
     <>
       <div className="mt-3 flex flex-col md:flex-row items-center gap-4 p-6">
         <div className="flex gap-2 items-center">
-          <label htmlFor="city" className="font-medium">Select City:</label>
+          <label htmlFor="city" className="font-medium">Search:</label>
           <input
             id="city"
             type="text"
@@ -32,10 +32,10 @@ const CitySelector = ({handleSearch}) => {
           />
         </div>
         <div className="flex gap-2">
-          <button className="bg-purple-600 text-white px-6 py-2 rounded-lg">
+          <button className="bg-purple-600 text-white px-3 py-2 rounded-lg">
             Find Company
           </button>
-          <button className="bg-purple-600 text-white px-6 py-2 rounded-lg" onClick={handleAddCompanyDialogOpen}>
+          <button className="bg-purple-600 text-white px-3 py-2 rounded-lg" onClick={handleAddCompanyDialogOpen}>
             + Add Company
           </button>
         </div>

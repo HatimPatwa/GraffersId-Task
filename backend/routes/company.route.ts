@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
     res.status(201).json(company);
   } catch (error) {
     console.log(error);
-    res.status(400).json({ error: 'Failed to create company' });
+    res.status(400).json({ error: error?.message ?? 'Failed to create company' });
   }
 });
 
@@ -41,7 +41,7 @@ router.get('/', async (req, res) => {
     res.status(200).json(companies);
   } catch (error) {
     console.log(error);
-    res.status(400).json({ error: 'Failed to fetch companies' });
+    res.status(400).json({ error: error?.message ?? 'Failed to fetch companies' });
   }
 });
 
@@ -58,7 +58,7 @@ router.put('/:id', async (req, res) => {
 
     res.status(200).json(company);
   } catch (error) {
-    res.status(400).json({ error: 'Failed to update company' });
+    res.status(400).json({ error:error?.message ??  'Failed to update company' });
   }
 });
 

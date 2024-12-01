@@ -1,6 +1,6 @@
 const SortDropdown = () => {
     return (
-        <div className="flex justify-end p-4">
+        <div className="flex gap-2 items-center">
             <label htmlFor="sort" className="mr-2 font-medium">Sort:</label>
             <select
                 id="sort"
