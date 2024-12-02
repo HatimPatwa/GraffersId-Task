@@ -5,7 +5,7 @@ import cors from 'cors';
 import CompanyRoutes from './routes/company.route.js';
 import CompanyReviewRoutes from './routes/company-review.route.js';
 
-mongoose.connect('mongodb+srv://hatim_p:Hatim160503@cluster0.au5cf.mongodb.net/graffersid-task',)
+mongoose.connect('mongodb://localhost:27017/graffers-id-task-hatim',)
 .then(() => console.log('Connected to MongoDB'))
 .catch((err) => console.error('MongoDB connection error:', err));
 
